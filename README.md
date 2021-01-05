@@ -1,6 +1,6 @@
 # OpenClassroom Projet 6
 
-- Construisez une API sécurisée pour une application d'avis gastronomiques : https://bastien-oc20.github.io/ocr-projet6/
+- Construisez une API sécurisée pour une application d'avis gastronomiques : [https://bastien-oc20.github.io/ocr-projet6/](https://bastien-oc20.github.io/ocr-projet6/frond-end/src/index.html)
 
 ## Pour commencer
 
@@ -19,30 +19,28 @@ Ce projet s'inscrit dans le cadre de la formation "Développeur web" proposée p
 ### Installation
 
 - **Executez Git bash**
-- **git clone https://bastien-oc20.github.io/ocr-projet6/**
+- **git clone [https://bastien-oc20.github.io/ocr-projet6/](https://bastien-oc20.github.io/ocr-projet6/)**
 
 ## Fabriqué avec
 
 - [Git](https://git-scm.com/download/win) - logiciel de versioning et de stockage
 - [Visual Studio Code](https://code.visualstudio.com/) - Editeur de textes
-- framework : Express
-- serveur : NodeJS
-- base de données : MongoDB
-- toutes les opérations de la base de données doivent utiliser le pack Mongoose avec
-  des schémas de données stricts.
+- [NodeJS](https://nodejs.org/fr/) - Environnement d'exécution JavaScript
+- [Express](https://expressjs.com/fr/) - Framework Node.js
+- [MongoDB](https://www.mongodb.com/fr) - Base de donnée
 
 ## Front-end server
 
 - Ceci est le MVP de l'application web So Pekocko, une entreprise de création de sauces piquantes.
 
-### Prérequis
+### 1. Prérequis
 
 - Vous devez installer [Node et npm](https://visualstudio.microsoft.com/fr/vs/features/node-js/) localement sur votre ordinateur.
   (cf boite à outils)
 
 - Pour les utilisateurs [Visual Studio Code](https://code.visualstudio.com/) de windows, l'installation de [Visual Studio C++](https://docs.microsoft.com/fr-fr/cpp/build/vscpp-step-0-installation?view=vs-2019#:~:text=Open%20the%20program%20from%20the,Visual%20C%2B%2B%20components%20to%20install.) et de [node.js tool pour visual studio](https://visualstudio.microsoft.com/fr/vs/features/node-js/) vous sera nécessaire.
 
-### Installation
+### 2. Installation
 
 - Clonez [https://github.com/OpenClassrooms-Student-Center/dwj-projet6.git](https://github.com/OpenClassrooms-Student-Center/dwj-projet6.git) sur votre ordinateur.
 
@@ -79,5 +77,5 @@ Ce projet s'inscrit dans le cadre de la formation "Développeur web" proposée p
 
 ## License
 
-- [GNU General Public License v3.0]().
+- [GNU General Public License v3.0]('').
 - Projet libre de droit
