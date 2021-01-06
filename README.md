@@ -1,6 +1,6 @@
 # OpenClassroom Projet 6
 
-- Construisez une API sécurisée pour une application d'avis gastronomiques : [https://bastien-oc20.github.io/ocr-projet6/](https://bastien-oc20.github.io/ocr-projet6/frond-end/src/index.html)
+- Construisez une API sécurisée pour une application d'avis gastronomiques : [https://bastien-oc20.github.io/ocr-projet6/](http://localhost:4200/login)
 
 ## Pour commencer
 
