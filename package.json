@@ -1,0 +1,19 @@
+{
+  "name": "ocr-projet6",
+  "version": "1.0.0",
+  "description": "- Construisez une API sécurisée pour une application d'avis gastronomiques : [https://bastien-oc20.github.io/ocr-projet6/](http://localhost:4200/login)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bastien-OC20/ocr-projet6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bastien-OC20/ocr-projet6/issues"
+  },
+  "homepage": "https://github.com/Bastien-OC20/ocr-projet6#readme"
+}

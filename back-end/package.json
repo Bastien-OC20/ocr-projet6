@@ -1,0 +1,36 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "Projet 6 - API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Bastien-OC20/ocr-projet6.git"
+  },
+  "author": "Bastien-OC20",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bastien-OC20/ocr-projet6/issues"
+  },
+  "homepage": "https://github.com/Bastien-OC20/ocr-projet6#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "helmet": "^4.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongo-sanitize": "^1.1.0",
+    "mongoose": "^5.11.13",
+    "mongoose-sanitize": "^1.1.0",
+    "mongoose-unique-validator": "^2.0.3",
+    "multer": "^1.4.2",
+    "sanitize": "^2.1.0",
+    "sha1": "^1.1.1"
+  }
+}

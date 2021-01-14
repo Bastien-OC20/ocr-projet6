@@ -1,9 +1,12 @@
+// server.js
+
+// Création d'un programme qui va écouter des requêtes http et qui va y répondre
 const http = require('http');
 const app = require('./app');
 
-const dotenv =require ( 'dotenv' ) . config ( )
+require('dotenv').config()
 
-
+// La fonction normalizePort renvoie un port valide, qu'il soit fourni sous la forme d'un numéro ou d'une chaîne
 const normalizePort = val => {
   const port = parseInt(val, 10);
 
@@ -15,9 +18,13 @@ const normalizePort = val => {
   }
   return false;
 };
+
+// la fonction normalizePort renvoie un port valide
 const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
+
+// La fonction errorHandler recherche les différentes erreurs et les gère de manière appropriée. Elle est ensuite enregistrée dans le serveur
 const errorHandler = error => {
   if (error.syscall !== 'listen') {
     throw error;
@@ -37,9 +44,11 @@ const errorHandler = error => {
       throw error;
   }
 };
-
+// creation du server
 const server = http.createServer(app);
 
+
+// un écouteur d'évènements est également enregistré,consignant le port ou le canal nommé sur lequel le serveur s'exécute dans la console.
 server.on('error', errorHandler);
 server.on('listening', () => {
   const address = server.address();
@@ -47,4 +56,5 @@ server.on('listening', () => {
   console.log('Listening on ' + bind);
 });
 
+// le server ecoute le requete envoyé
 server.listen(port);

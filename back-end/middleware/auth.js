@@ -1,18 +1,19 @@
-const jwt = require('jsonwebtoken');
-const dotenv =require ( 'dotenv' ) . config ( )
+// middleware/auth.js
+
+require('dotenv').config();      // importation du paquet dotenv pour les variables d'environnement
+const jwt = require('jsonwebtoken');        // importation du paquet jwt
+
 module.exports = (req, res, next) => {
-  try {
-    const token = req.headers.authorization.split(' ')[1];
-    const decodedToken = jwt.verify(token, process.env.TOKEN);
-    const userId = decodedToken.userId;
-    if (req.body.userId && req.body.userId !== userId) {
-      throw 'Invalid user ID';
-    } else {
-      next();
+    try {
+        const token = req.headers.authorization.split(' ')[1]; // Recuperation du token (bearer token)
+        const decodedToken = jwt.verify(token, process.env.SECRET_KEY); // Vérification du token
+        const userId = decodedToken.userId;
+        if (req.body.userId && req.body.userId !== userId) { //Si ID  : correspondance avec le TOKEN
+            throw 'User ID non valable';
+        } else {
+            next();
+        }
+    } catch {
+    res.status(401).json({error :'Requête non authentifiée !'});
     }
-  } catch {
-    res.status(401).json({
-      error: new Error('Invalid request!')
-    });
-  }
 };
